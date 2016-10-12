@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="基础指标"
+        android:textSize="25dp"/>
+    <Button
+        android:id="@+id/refreshBasicIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刷新基础指标"/>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="心率"
+                android:textSize="20dp"
+                />
+            <EditText
+                android:id="@+id/b_heartRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#606060"
+                android:textSize="20px"
+                android:width="90dp" >
+            </EditText>
+            <TextView
+                android:text="跳/分钟"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/b_height"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:width="85dp"
+                />
+            <TextView
+                android:text="厘米"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="血氧含量"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/b_oxygen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:width="80dp"
+                />
+            <TextView
+                android:text="%"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体重"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/b_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="60dp" />
+            <TextView
+                android:text="千克"/>
+
+        </TableRow>
+
+
+
+
+        <TableRow android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/updateBasics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交修改"
+                android:layout_column="1" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

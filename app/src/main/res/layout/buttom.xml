@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ccffff"
+    >
+
+    <LinearLayout
+        android:id="@+id/lay_hudie"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageButton
+
+            android:id="@+id/ibtn_hudie"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:clickable="false"
+            android:src="@drawable/health_examination"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基础指标"/>
+        "
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_set"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/ibtn_set"
+            android:clickable="false"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/data"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活状态"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_user"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/ibtn_user"
+            android:clickable="false"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/health_resolution"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预期生活质量/指导"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_yang"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/ibtn_yang"
+            android:clickable="false"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mine"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的"/>
+
+    </LinearLayout>
+
+</LinearLayout>
